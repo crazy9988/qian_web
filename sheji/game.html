@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet"href="css/game.css" />
+	<link rel="stylesheet" href="statics/css/game.css" />
+	<script type="text/javascript" src="js/game.js"></script>
+	
+	<body>
+		<div class="navbar">
+			<div class="nav">
+				<div class="nav_log">
+					<img src="img/nav-img.png" />
+				</div>
+				<div class="nav_title">
+					<ul>
+						&nbsp;&nbsp;&nbsp;&nbsp;<li><a href="index.html">首页</a></li>
+						<li><a href="detail.html">关于我</a></li>
+						<li><a href="xiao yuan.html">校园生活</a></li>
+						<li><a href="zuo ping.html">我的作品</a></li>
+						<li><a href="career planning.html">职业规划</a></li>
+						<li><a href="video.html">视频相册</a></li>
+						<li><a href="game.html">小游戏</a></li>
+						<li><a href="liu yan.html">留言板</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_1">
+				<div class="content_1_a">
+					<div id="hananTOP">
+						<h3>
+							<p>JS扫雷游戏</p>
+						</h3>
+					</div>
+					<div class="main solid-border-up" id="oMain" style="width: 213px; display:none">
+						<div class="solid-border-down top">
+							<table>
+									<tr>
+										<td style="width: 42px;">
+											<div class="solid-border-down count" id="oCount">10</div>
+										</td>
+										<td>
+											<input title="点击开始游戏" type="image" src="/jscode/demoimg/201209/happy.gif" id="start" />
+										</td>
+										<td style="text-align: right;">
+											<label><input type="radio" name="radio" checked="checked" value="10" />初级</label>
+											<label><input type="radio" name="radio" value="40" />中级</label>
+											<label><input type="radio" name="radio" value="99"/>高级</label>
+										</td>
+									</tr>
+							</table>
+						</div>
+						<div class="mine-field solid-border-down" id="mineField"></div>
+					</div>
+					<img alt="" src="/jscode/demoimg/201209/loading.gif" id="loading">	
+				</div>
+				<div class="content_1_b">
+					<h2>扫雷游戏</h2>
+					<div class="content_1_bzuo">
+						<div >
+							<img src="img/game01.png" />
+						</div>
+					</div>
+					<div class="content_1_byou">
+						<p>TAG：扫雷　时间：2020-6-01　浏览：974</p>
+						Js扫雷大战游戏，本扫雷游戏界面和Windows中的扫雷界面几乎一样，
+					在游戏的过程中，你同样觉得这几乎不是用JavaScript来编写开发的，
+					对，这就是JS版的扫雷游戏，这款扫雷可以选择初级、中级、高级难度级别，
+					玩法和Windows相似，这里不多介绍了。
+					</div>
+					
+				</div>
+			</div>
+			<div class="content_2">
+				<div class="content_2_a">
+					<form name="x" style="margin: 25px auto;">
+						<center>
+							<table border="0">
+								<tr>
+									<td>
+										<center>
+											<textarea name="card" rows="5" cols="25"style="height:130px;">玩法说明：请先想好
+												一个数字（0到63之间的数），然后开始，按照提示作相应问答，系统就
+												能猜出那个数
+											</textarea>
+										</center>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<center>
+											<input type="text" size="36" name="text" value="按开始"
+												 style="FONT-SIZE: 9pt">
+										</center>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<center>
+											<input type="button" value="是的" onclick="if(play==1) Yes()"
+												 style="FONT-SIZE: 9pt">
+											<input type="button" value="不是" onclick="if(play==1) Nextcard()" 
+												style="FONT-SIZE: 9pt">
+											<input type="button" name="stbt" value="开始" onclick="if(play==0) Start(); 
+												else Restart()" style="FONT-SIZE: 9pt">
+										</center>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</form>	
+				
+			</div>
+			<div class="content_2_b">
+					<h2>js猜数字小游戏</h2>
+					<div class="content_2_bzuo">
+						<div >
+							<img src="img/game02.png" />
+						</div>
+					</div>
+					<div class="content_2_byou">
+						<p>TAG：猜数字　时间：2020-6-01　浏览：674</p>
+						这个游戏感兴趣，开发智力，玩法说明：请先想好一个数字（0到63之间的数）
+						，然后开始，按照提示作相应问答，系统就能猜出那个数，按“开始”按钮
+						即可游戏。
+					</div>
+				</div>
+		</div>
+		
+	</body>
+</html>
